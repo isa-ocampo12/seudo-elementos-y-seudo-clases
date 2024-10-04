@@ -1,0 +1,71 @@
+/* Seudo clases de sleccion */
+/* first-child */
+/* Seleccionar el primero */
+ul li:first-child{ 
+    background-color: blueviolet;    
+} 
+
+/* last-child */
+/* selccionar el ultimo */
+ul li:last-child{ 
+    background-color: palevioletred;    
+} 
+
+/* nth-child(numero) */
+ul li:nth-child(3){
+    background-color: cyan;
+}
+
+/* nth-child(odd even) */
+/* Seleccikona los impares */
+ul li:nth-child(odd){
+    background-color: green;
+}
+
+/* nth-child(even) */
+/* Selecciona los pares */
+ul li:nth-child(even){
+    background-color: palegoldenrod;
+}
+
+/* nth-child(n+numero) */
+/* Selecciona de 2 en 2 (2n) */
+/* (2n+3) partiendo desde el 3 arranca de 2 en 2 */
+ul li:nth-child(2n){
+    background-color: green;
+}
+
+
+/* (etiquetas)---> :nth-of-type(numero por etiqueta) */
+/* Selecciona por tipo de etiqueta */
+div h2:nth-of-type(2){
+    background-color: blueviolet;
+}
+
+/* hover */
+h1{
+    background-color: blueviolet;
+    color: white;
+}
+h1:hover{
+    color: black;
+}
+
+/* :focus */
+.primero:focus, .segundo:focus{
+    background-color: rgba(250, 185, 195, 0.486);
+}
+
+form button{
+    display: none;
+
+}
+/* + button ---> el que sigue para ser mostrado  */
+.tercero:checked + button{
+    display: block;
+}
+
+/* Despues del span o before antes del span */
+span::after{
+    content: "🦋";
+}

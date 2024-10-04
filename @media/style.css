@@ -1,0 +1,59 @@
+/* Medidas generales */
+
+h1{
+    text-align: center;
+}
+.galeria{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+    gap: 30px;
+}
+.galeria img{
+    width: 300px;
+}
+
+/* Medidas para celulares */
+@media (min-width: 0) and (max-width: 580px) {
+    .galeria{
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    .galeria img{
+        width: 120px;
+    }
+}
+
+/* Tablets */
+@media (min-width:581px) and  (max-width: 1080px) {
+    .galeria{
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 5px;
+    }
+    .galeria img{
+        width: 220px;
+    }
+    
+}
+
+/* Portatiles */
+@media (min-width:1081px) and  (max-width: 1300px) {
+    .galeria{
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 5px;
+    }
+    .galeria img{
+        width: 260px;
+    }
+    
+}
+
+/* Computador de mesa/mac */
+@media (min-width:1301px) and  (max-width: 2500px) {
+
+}

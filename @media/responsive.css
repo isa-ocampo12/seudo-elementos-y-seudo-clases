@@ -1,0 +1,26 @@
+/* Medidas para celulares */
+@media (min-width: 0) and (max-width: 580px) {
+    .galeria{
+        justify-content: center; !important
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    .galeria img{
+        width: 120px;
+    }
+}
+
+/* Tablets */
+@media (min-width:581px) and  (max-width: 1080px) {
+
+}
+
+/* Portatiles */
+@media (min-width:1081px) and  (max-width: 1300px) {
+
+}
+
+/* Computador de mesa/mac */
+@media (min-width:1301px) and  (max-width: 2500px) {
+
+}
